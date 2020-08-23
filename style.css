@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right top, #ff4e50, #f9d423); 
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Architects Daughter', cursive;
+    color: white;
+}
+h2{
+    margin: 2rem;
+    font-size: 5rem;
+}
+.listTitle{
+    margin: 3rem;
+    min-width: 40%;
+    min-height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listTitle input, .listTitle button{
+    font-size: 1.25rem;
+    font-family: 'Architects Daughter', cursive;
+    border: 0;
+    background-color: white;
+    padding: 0.75rem;
+    outline: none;
+}
+.listTitle button{
+    
+    color: #ff4e50;
+    background: white;
+    transition: all 400ms ease;
+}
+.listTitle button:hover{
+    color: white;
+    background: #ff4e50;
+}
+.listContainer{
+    min-width: 40%;
+    font-size: 1.25rem;
+}
+.list{
+    list-style: none;
+    width: 100%;    
+}
+.listDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0.25rem; */
+    color: black;
+    background: white;
+    margin: 0.5rem;
+    transition: all 500ms ease;
+}
+.listitem{
+    flex: 1; 
+    margin: 0.5rem;   
+}
+.completedBtn, .trashBtn{
+    font-size: 1.5rem;
+    border: 0;
+    color: white;
+    background-color: #ff4e50;
+    padding: 0.75rem;
+    outline: none;
+    cursor: pointer;
+}
+.completedBtn{
+    background: lightgreen;
+}
+.fa-check-square, .fa-trash{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotate(20deg);
+    opacity: 0;
+}
